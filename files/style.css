@@ -1274,3 +1274,45 @@ body {
         color: #000;
     }
 }
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-img {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Arrange as a column */
+        text-align: center;
+    }
+
+    .about-img,
+    .about-text {
+        flex: unset;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+
+    .about-img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
