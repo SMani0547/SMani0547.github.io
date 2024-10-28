@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typed.js Test</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="name"></span></h1>
+
+    <script>
+        var typed = new Typed(".name", {
+            strings: ["SHIVA MANI GOUNDAR"],
+            typeSpeed: 100
+        });
+    </script>
+</body>
+</html>
